@@ -58,7 +58,9 @@ jobs:
           mkdir runtimes\win-x64\native
           copy ..\Packages\com.github.homuler.mediapipe\Runtime\Plugins\mediapipe_c.dll .\runtimes\win-x64\native\
           dotnet build
-          dotnet nuget push .\bin\Debug\*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_TOKEN}} --skip-duplicate
+          ## OLD KAYMYST NUGET PUSH ## dotnet nuget push .\bin\Debug\*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{secrets.NUGET_TOKEN}} --skip-duplicate
+          nuget sources Add -Name "GitHub" -Source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" -Username "${{ github.actor }}" -Password "${{ secrets.GITHUB_TOKEN }}"
+          nuget push .\bin\Debug\*.nupkg -Source "GitHub"
         shell: cmd
 
   package:

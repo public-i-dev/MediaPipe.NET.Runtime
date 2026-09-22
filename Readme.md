@@ -1,6 +1,6 @@
 # MediaPipe.NET.Runtime
 
-> Native library package for https://github.com/kaymyst/MediaPipe.NET
+> Native library package for https://github.com/public-i-dev/MediaPipe.NET
 
 This is the first half of the port of [MediaPipeUnityPlugin](https://github.com/homuler/MediaPipeUnityPlugin/), in order to use MediaPipe on the latest .NET environment. The goal is to separate the actual C# bindings from the native library into 2 different workflows to increase productivity and efficiency. We think it will drastically improve maintainability as we'll be able to take better advantage of CI and other things like GitHub releases.
 

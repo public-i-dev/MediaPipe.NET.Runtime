@@ -9,15 +9,15 @@
 
   <PropertyGroup Label="Nuget">
     <IsPackable>true</IsPackable>
-    <PackageId>Mediapipe.Net.Runtime.CPU.kaymyst</PackageId>
+    <PackageId>Mediapipe.Net.Runtime.CPU.public-i-dev</PackageId>
     <Version>1.0.8</Version>
-    <Authors>homuler;Vignette;kaymyst</Authors>
+    <Authors>homuler;Vignette;public-i-dev</Authors>
     <PackageTags>Google;Mediapipe;Tracking;Media Analysis</PackageTags>
-    <Title>Mediapipe.Net.Runtime.CPU.kaymyst</Title>
+    <Title>Mediapipe.Net.Runtime.CPU.public-i-dev</Title>
     <Description>Native runtime libraries for MediaPipe.NET (CPU) (MediaPipe v0.10.9)</Description>
-    <Copyright>2024 homuler and kaymyst</Copyright>
-    <RepositoryUrl>https://github.com/kaymyst/MediaPipe.NET.Runtime</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/kaymyst/MediaPipe.NET.Runtime</PackageProjectUrl>
+    <Copyright>2024 homuler and public-i-dev</Copyright>
+    <RepositoryUrl>https://github.com/public-i-dev/MediaPipe.NET.Runtime</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/public-i-dev/MediaPipe.NET.Runtime</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <IncludeBuildOutput>false</IncludeBuildOutput>
   </PropertyGroup>
@@ -43,7 +43,7 @@
     </None>
 	<None Include="Mediapipe.Net.Runtime.CPU.props">
       <Pack>True</Pack>
-      <PackagePath>build\net48\Mediapipe.Net.Runtime.CPU.kaymyst.props</PackagePath>
+      <PackagePath>build\net48\Mediapipe.Net.Runtime.CPU.public-i-dev.props</PackagePath>
     </None>
     <None Include="_._">
       <!-- Means this package doesn't provide any reference assembly to the target framework.
