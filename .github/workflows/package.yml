@@ -46,7 +46,7 @@ jobs:
         shell: cmd
         
       - name: Upload mediapipe_c.dll
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.packageName }}-mediapipe_c.dll
           path: Packages/com.github.homuler.mediapipe/Runtime/Plugins/mediapipe_c.dll
@@ -70,7 +70,7 @@ jobs:
     steps:
       
       - name: Download mediapipe_c.dll
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.packageName }}-mediapipe_c.dll
           path: Packages/com.github.homuler.mediapipe/Runtime/Plugins
@@ -80,7 +80,7 @@ jobs:
           zip -r MediaPipeUnityPlugin-all.zip . -x .git/**\*
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.packageName }}
           path: |
