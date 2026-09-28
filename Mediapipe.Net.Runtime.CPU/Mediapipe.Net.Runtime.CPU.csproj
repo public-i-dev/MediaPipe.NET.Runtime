@@ -10,8 +10,8 @@
   <PropertyGroup Label="Nuget">
     <IsPackable>true</IsPackable>
     <PackageId>Mediapipe.Net.Runtime.CPU.public-i-dev</PackageId>
-    <Version>1.0.8</Version>
-    <Authors>homuler;Vignette;public-i-dev</Authors>
+    <Version>1.0.9</Version>
+    <Authors>homuler;Vignette;kaymyst;public-i-dev</Authors>
     <PackageTags>Google;Mediapipe;Tracking;Media Analysis</PackageTags>
     <Title>Mediapipe.Net.Runtime.CPU.public-i-dev</Title>
     <Description>Native runtime libraries for MediaPipe.NET (CPU) (MediaPipe v0.10.9)</Description>
